@@ -12,4 +12,5 @@ b = 3
 
 print("My name is" ,name , "and I am" ,age ,"years old.")
 print(a**b)
+
 # a**b means a to the power b (a^b).
