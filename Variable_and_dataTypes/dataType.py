@@ -16,4 +16,4 @@ print(type(floatValue))
 print(type(hehe))
 print(type(a))
 
-
+# Str is a data type that stores a sequence of characters.
