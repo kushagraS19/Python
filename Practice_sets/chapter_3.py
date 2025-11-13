@@ -25,7 +25,7 @@ else:
 
 # WAP to count the grade A in the following tuple -->
 
-tup = ("C", "D", "A", "A", "B", "B" , "A")
+tup = ("C", "D", "A", "A", "B", "B" ,"A")
 
 print(tup.count("A"))
 
