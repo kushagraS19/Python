@@ -6,7 +6,6 @@ for val in nums:
     print(val)"""
 
 
-
 """tup = (1,7,3,9,66,55)
 
 for val in tup:
@@ -61,7 +60,7 @@ else:
 # Range functions returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
 # range(start, stop, step) step means kitna increase karna.
 
-"""for el in range(5):
+"""for el in range(8):
     print(el)
 print()
 
@@ -71,3 +70,16 @@ print()
 
 for j in range(1,9,2):
     print(j)"""
+
+#_______________________________________________________________________________________________________________________
+
+# PASS --> 
+
+# This skips the loop.
+# If we do not want to write a statement in the loop and want to leave it blank.
+# It is used as placeholder for the future code.
+
+for i in range(65):
+    pass # Skips the loop.
+
+print("Some useful work")
