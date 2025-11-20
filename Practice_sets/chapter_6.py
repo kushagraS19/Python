@@ -66,7 +66,7 @@ print("The amount is INR :",convert(usd))"""
 
 # WAF to find a number is even or odd --> 
 
-x = int(input("Enter a number : "))
+"""x = int(input("Enter a number : "))
 
 def check (x):
     if(x%2 == 0):
@@ -74,4 +74,31 @@ def check (x):
     else:
         return "Odd"
     
-print(check(x))    
+print(check(x))   """ 
+
+#___________________________________________________________________________________________________________________
+
+# Recursion -->>>>
+
+# Write a recursive function to calculate the sum of first n natural numbers --> 
+
+"""def sum (n):
+    if (n == 0):
+        return 0
+    return sum(n-1) + n
+
+summ = int(input("Enter a number : "))
+print(sum(summ))"""
+
+#_____________________________________________________________________________________________________________
+
+# Write a recursive function to print all elements in a list -->
+
+def printL(list,idx = 0):
+    if(idx == len(list)):
+        return
+    print(list[idx])
+    printL(list, idx+1)
+
+hehe = ["hehe","haha","hihi","huahau","buahahaha"]    
+printL(hehe)
