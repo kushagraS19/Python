@@ -1,10 +1,10 @@
-# The data or any variable or functions are stored in a class are known as the attributes of that class.
+# The data or any variable are stored in a class are known as the attributes of that class.
 # Types of Attributes --> 
 # Class attributes --> Same for every objects or methods.
 # Instance or object attributes --> Different for all the objects.
 
 class Student:
-    college = "Acroplois"
+    college = "Acropolis"
     name = "Anonymous" # Class attribute
 
     def __init__(self, name):
