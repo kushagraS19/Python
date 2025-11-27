@@ -42,7 +42,7 @@ s1.hello() """
 
 # super() method is used to access method of the parent class.
 
-class Car:
+"""class Car:
     def __init__(self,type):
         self.type = type
 
@@ -61,4 +61,47 @@ class Tata(Car):
         super().start()
 
 car1 = Tata("Benz", "Pani")        
-print(car1.type)
+print(car1.type)"""
+
+#____________________________________________________________________________________________________________
+
+# Class Method -->
+
+# The class method is used to change or use the class attributes. Normal methods can change or use thr variables defined in the method.
+
+"""class Person:
+    name = "Anonymous"
+    
+    @classmethod
+    def changeName (cls, name):
+        cls.name = name
+
+p1 = Person()
+p1.changeName("Kushagra")
+print(p1.name)
+print(Person.name)"""
+
+#____________________________________________________________________________________________________________________
+
+# Property Decorator -->
+
+# We use property decorator on any method in the class to use the method as a property.
+
+class Student:
+    def __init__(self,phy,chem,math):
+        self.phy = phy
+        self.chem = chem
+        self.math = math
+
+    @property
+    def percentage(self):
+        return str((self.phy + self.math + self.chem) / 3) + "%"
+        
+s1 = Student(89,90,97)
+print(s1.percentage)        
+
+s1.phy = 78
+print(s1.percentage)
+
+s1.chem = 97
+print(s1.percentage)

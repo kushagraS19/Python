@@ -77,7 +77,7 @@ print(car1.start())"""
 
 # Multiple inheritance --> One derived class, Many parent or base classes.
 
-class A:
+"""class A:
     var1 = "Welcome to class A"
 
 class B:
@@ -89,4 +89,35 @@ class C(A,B):
 d1 = C()
 print(d1.var1)            
 print(d1.var2)          
-print(d1.var4)            
+print(d1.var4)
+
+print(type(d1.var1))"""
+
+#___________________________________________________________________________________________________________
+
+# Polymorphism -->
+
+# Operator Overloading -- >
+# When the same operator is allowed to have different meaning according to the context.
+
+class Complex:
+    def __init__(self,real,img):
+        self.real = real
+        self.img = img
+
+    def ShowNo(self):
+        print(self.real,"i +",self.img,"j")    
+
+    def __add__(self,num2):
+        newReal = self.real + num2.real
+        newImg = self.img + num2.img    
+        return Complex(newReal, newImg)
+
+c1 = Complex(4,7)
+c1.ShowNo()        
+
+c2 = Complex(7,9)
+c2.ShowNo()
+
+c3 = c1 + c2
+c3.ShowNo()
