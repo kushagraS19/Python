@@ -14,4 +14,4 @@ while True:
     else:
         print("Your number was smaller. Try again")        
 
-print("GAME OVER")    
+print("GAME OVER")
